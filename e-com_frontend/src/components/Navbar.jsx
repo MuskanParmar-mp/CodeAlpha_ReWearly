@@ -115,6 +115,14 @@ function Navbar() {
             Kids
           </Link>
 
+
+          <Link
+  to="/wishlist"
+  className="text-sm font-medium text-gray-700 transition hover:text-orange-600"
+>
+  ❤️ Wishlist
+</Link>
+
           {user ? (
             <>
               <span className="text-sm font-medium text-gray-700">
@@ -222,6 +230,15 @@ function Navbar() {
             >
               Kids
             </Link>
+
+          <Link
+  to="/wishlist"
+  onClick={() => setMenuOpen(false)}
+  className="font-medium text-gray-700 hover:text-orange-600"
+>
+  ❤️ Wishlist
+</Link>
+    
 
             {user ? (
               <>

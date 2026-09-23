@@ -12,6 +12,8 @@ import Checkout from "./components/Checkout"
 import MyOrders from "./components/MyOrders"
 import Footer from "./components/Footer"
 import ProtectedRoute from "./components/ProtectedRoute"
+import Wishlist from "./components/Wishlist"
+
 
 function App() {
   return (
@@ -78,6 +80,9 @@ function App() {
     </ProtectedRoute>
   }
 />
+
+
+<Route path="/wishlist" element={<Wishlist />} />
 
       </Routes>
 
